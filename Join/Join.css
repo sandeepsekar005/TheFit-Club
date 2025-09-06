@@ -1,0 +1,71 @@
+.Join {
+    display: flex;
+    padding: 0 20px;
+    gap: 100px;
+}
+
+.left-j {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.left-j>hr {
+    position: absolute;
+    width: 180px;
+    border: 2px solid var(--orange);
+    border-radius: 30%;
+    margin: -10px 0;
+}
+
+.left-j>div {
+    display: flex;
+    gap: 10px;
+}
+
+.right-j {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.email-container {
+    display: flex;
+    gap: 30px;
+    background-color: gray;
+    padding: 10px 20px;
+}
+
+.email-container>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    
+}
+
+::placeholder {
+    color: var(--lightgray);
+}
+
+.btn-j {
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .Join{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .left-j{
+        font-size: x-large;
+        flex-direction: column;
+    }
+    .right-j{
+        padding: 20px;
+    }
+}

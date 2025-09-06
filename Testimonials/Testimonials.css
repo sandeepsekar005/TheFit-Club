@@ -1,0 +1,115 @@
+.testimonials {
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.left-t {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    gap: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.left-t>:nth-child(1) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.left-t>:nth-child(2),
+.left-t>:nth-child(3) {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.left-t>:nth-child(4) {
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.right-t {
+    flex: 1;
+    position: relative;
+}
+
+.right-t>img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    right: 80px;
+    top: 20px;
+}
+
+.right-t>:nth-child(1) {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 90px;
+    top: 10px;
+}
+
+.right-t>:nth-child(2) {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 40px;
+    right: 50px;
+    background: var(--planCard);
+}
+
+.arrows {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+
+.arrows>img {
+    width: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .left-t>:nth-child(2),
+    .left-t>:nth-child(3) {
+        font-size: xx-large;
+    }
+
+    .right-t{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .right-t>div{
+        position: relative;
+        display: none;
+    }
+
+    .right-t>img{
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+
+    .right-t>:last-child{
+        display: block;
+        bottom:0;
+    }
+}

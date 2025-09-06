@@ -1,0 +1,275 @@
+.hero {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-h {
+    padding: 32px;
+    padding-top: 24px;
+    flex: 3;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.right-h {
+    flex: 1;
+    position: relative;
+    /* background-color: var(--orange); */
+}
+
+.the-best-ad {
+    margin-top: 40px;
+    background-color: gray;
+    border-radius: 35px;
+    width: fit-content;
+    padding: 15px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.the-best-ad>span {
+    z-index: 2;
+}
+
+.the-best-ad>div {
+    position: absolute;
+    background-color: var(--orange);
+    width: 55px;
+    height: 85%;
+    left: 8px;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+
+.hero-text>div:nth-of-type(3) {
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.figures {
+    display: flex;
+    gap: 20px;
+}
+
+.figures>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.figures>div>span:nth-of-type(1) {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.figures>div>span:nth-of-type(2) {
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    font-weight: normal;
+}
+
+.hero-buttons>:nth-child(1) {
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
+}
+
+.hero-buttons>:nth-child(2) {
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange);
+}
+
+.right-h>.btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: black;
+}
+
+.heart-rate {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 10px;
+    align-items: start;
+    border-radius: 5px;
+    position: absolute;
+    right: 90px;
+    top: 150px;
+}
+
+.heart-rate>img {
+    width: 25px;
+}
+
+.heart-rate>:nth-child(2) {
+    color: var(--gray);
+}
+
+.heart-rate>:nth-child(3) {
+    color: white;
+    font-size: 20px;
+}
+
+.hero-image {
+    position: absolute;
+    width: 300px;
+    top: 200px;
+    right: 150px;
+}
+
+.hero-image-back {
+    position: absolute;
+    top: 120px;
+    right: 260px;
+    z-index: -1;
+    width: 200px;
+}
+
+.calories {
+    display: flex;
+    gap: 15px;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 20px;
+    width: fit-content;
+    position: absolute;
+    top: 500px;
+    right: 500px;
+}
+
+.calories>img {
+    width: 50px;
+}
+
+.calories>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories>div> :nth-child(1) {
+    color: var(--gray);
+}
+
+.calories>div> :nth-child(2) {
+    color: white;
+    font-size: 15px;
+}
+
+.hero-blur {
+    width: 300px;
+    height: 350px;
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-blur {
+        width: 150px;
+    }
+
+    .the-best-ad {
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+
+    .hero-text {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text>div:nth-of-type(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .figures>div>span:nth-of-type(1) {
+        font-size: large;
+    }
+
+    .figures>div>span:nth-of-type(2) {
+        font-size: small;
+    }
+
+    .right-h {
+        position: relative;
+        background: none;
+    }
+
+    .heart-rate {
+        left: 10px;
+        top: 70px;
+    }
+
+    .calories {
+        position: relative;
+        top: 70px;
+        left: 70px;
+    }
+
+    .calories>img {
+        width: 20px;
+    }
+
+    .calories>div> :nth-child(2) {
+        color: white;
+        font-size: 15px;
+    }
+
+    .hero-image {
+        position: relative;
+        width: 150px;
+        left: 100px;
+        top: 50px;
+        align-items: center;
+    }
+
+    .hero-image-back {
+        width: 120px;
+        left: 80px;
+        top: 0px;
+    }
+
+}
